@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  company: one
+  customer: one
+  is_approve: false
+  video_url: MyString
+
+two:
+  company: two
+  customer: two
+  is_approve: false
+  video_url: MyString

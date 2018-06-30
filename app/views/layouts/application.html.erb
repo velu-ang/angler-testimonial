@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Testimorial</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     <link href="https://vjs.zencdn.net/7.0.3/video-js.css" rel="stylesheet">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/videojs-record/2.3.1/css/videojs.record.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webrtc-adapter/6.2.1/adapter.js"></script>
+        <script src="https://vjs.zencdn.net/7.0.3/video.js"></script>
+        <script src="/assets/RecordRTC.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-record/2.3.1/videojs.record.js"></script>
+
+
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

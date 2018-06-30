@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @video.company %>
+</p>
+
+<p>
+  <strong>Customer:</strong>
+  <%= @video.customer %>
+</p>
+
+<p>
+  <strong>Is approve:</strong>
+  <%= @video.is_approve %>
+</p>
+
+<p>
+  <strong>Video url:</strong>
+  <video width="320" height="240" controls>
+            <source src="<%= @video.video_url %>" type="video/mp4">
+              Your browser does not support the video tag.
+        </video>
+</p>
+
+<%= link_to 'Edit', edit_video_path(@video) %> |
+<%= link_to 'Back', videos_path %>
